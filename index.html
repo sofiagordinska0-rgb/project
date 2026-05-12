@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Навчальний проєкт</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f7fb;
+    color:#222;
+}
+
+header{
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    border-radius:15px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:12px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Навчальний проєкт</h1>
+    <p>Гординська Софія, 11 клас</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Про проєкт</h2>
+
+        <p>
+        Цей сайт створений у межах річного проєкту з інформатики.
+        Репозиторій містить презентацію та приклад вебсторінки,
+        оформленої за допомогою HTML, CSS та JavaScript.
+        </p>
+    </div>
+
+    <div class="card">
+
+        <h2>Ілюстрація</h2>
+
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Technology">
+
+    </div>
+
+    <div class="card">
+
+        <h2>Інтерактивність</h2>
+
+        <button onclick="showText()">
+            Натисни
+        </button>
+
+        <p id="demo"></p>
+
+    </div>
+
+</div>
+
+<footer>
+    GitHub Project 2026
+</footer>
+
+<script>
+
+function showText(){
+    document.getElementById("demo").innerHTML =
+    "Сайт працює успішно.";
+}
+
+</script>
+
+</body>
+</html>
